@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h3{color: rgb(251, 4, 45);
+           background-color: rgb(7, 227, 150);
+        font-size: 30px;
+        width: fit-content;}
+        h1{color: rgb(244, 106, 42);}
+        h2{color: rgb(3, 186, 247);}
+
+           div{
+              margin-left: 200px;
+              background-color: rgb(59, 59, 61);
+              border: 10px double rgb(44, 249, 44);
+              width: fit-content;
+              padding: 9px;
+           }
+           u{color: blue;
+            background-color: black;
+        }
+    </style>
+</head>
+<body >
+    <div>
+    <center >
+       <h1><u>{{data}}</u></h1>
+       <h1>lower:-{{data|lower}}</h1>
+       <h1>upper:-{{data|upper}}</h1>
+       <h1>title:-{{data|title}}</h1>
+       <h1>length:-{{data|length}}</h1>
+       <h1>slice:-{{data|slice:'3'}}</h1>
+       <h1>truncatewords:-{{data|truncatewords:'2'}}</h1>
+       <h1>truncatechars:-{{data|truncatechars:'3'}}</h1>
+           <h3>pluralize</h3>
+       <h2>I have {{c}} dog{{c|pluralize}}</h2>
+       <h2>I have {{c}} mango{{c|pluralize:'es'}}</h2>
+   
+       <h2>This {{c}} dog{{c|pluralize}} {{c|pluralize:'is,are'}} mine</h2>
+           <h3>time filters:-</h3>
+
+           <h3>day</h3>
+       <h2>d:-{{dt|date:'d'}}</h2>
+       <h2>j:-{{dt|date:'j'}}</h2>
+       <h2>S:-{{dt|date:'d S'}}</h2>
+
+            <h3>week</h3>
+       <h2>D:-{{dt|date:'D'}}</h2>
+       <h2>I:-{{dt|date:'I'}}</h2>
+            <h3>month</h3>
+       <h2>m:-{{dt|date:'m'}}</h2>
+       <h2>n:-{{dt|date:'n'}}</h2>
+       <h2>b:-{{dt|date:'b'}}</h2>
+       <h2>M:-{{dt|date:'M'}}</h2>
+       <h2>F:-{{dt|date:'F'}}</h2>
+       <h3>year</h3>
+       <h2>Y:-{{dt|date:'Y'}}</h2>
+       <h2>y:-{{dt|date:'y'}}</h2>
+       <h3>hours</h3>
+       <h2>24h-G:-{{dt|date:'G'}}</h2>
+       <h2>24h-H:-{{dt|date:'H'}}</h2>
+       <h2>12h-g:-{{dt|date:'g'}}</h2>
+       <h2>12h-h:-{{dt|date:'h'}}</h2>
+       <h2>a:-{{dt|date:'a'}}</h2>
+       <h2>A:-{{dt|date:'A'}}</h2>
+       
+       <h3>minutes</h3>
+       <h2>i:-{{dt|date:'i'}}</h2>
+        
+       <h3>seconds</h3>
+       <h2>s:-{{dt|date:'s'}}</h2>
+
+       
+
+   
+
+
+
+    </center>
+    </div>
+</body>
+</html>
